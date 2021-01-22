@@ -1,0 +1,54 @@
+/*
+mobile first
+
+*/
+*{font-family: sans-serif;
+font-weight: 100;
+
+}
+/* para eliminar el menu responsivo y hacerlo aparecer cuando sea necesario*/
+.nav__responsive-ul {
+    display: none;
+}
+.nav{
+    background-color: slateblue;
+    text-align: center;
+
+}
+.nav__li {
+    display: inline-block;
+
+    padding: 13px;
+    color: #ddf;
+}
+
+.nav__li a {
+    color: #fff;
+    text-decoration: none;
+}
+.nav__li i {
+    width: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 10px;
+}
+
+/*para cuando se le pasa el mouse por arriba*/
+.nav__li:hover > a {
+    color: #aaa;
+}
+.nav__li:hover {
+    color: #aaa;
+}
+
+@media only screen and (max-width: 600px){
+    .nav__ul {
+        display: none;
+    }
+    .nav__responsive-ul {
+        display: block;
+    }
+    .nav__responsive-li a {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,27 @@
+/*
+flexbox
+
+*/
+*{font-family: sans-serif;
+font-weight: 100;
+font-size: 20px;
+
+}
+
+.flex-cont {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex-item {
+    background-color: #25d;
+    color: #fff;
+    flex-grow: 1;}
+.naranja {
+    background: rgb(139, 99, 99);
+    order: 2;
+}
+.verde {
+    background: green;
+    flex-shrink: 2; /*si no entra en la caja la que va a ceder mas rapido va a ser la que tenga un flex-shrink mas elevado*/
+    order: 1;
+}

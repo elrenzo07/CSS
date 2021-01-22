@@ -1,0 +1,14 @@
+:root { /*aca se definen las variables globales con dos guiones bajos mas el nombre de la variable*/
+    --color-rojo-claro: #f44;
+    --color-rojo-oscuro: #a00;
+}
+
+.container {
+    background: var(--color-rojo-claro); /*con el comando var hago uso de las variables globales almacenadas*/
+
+}
+
+.b {
+    --otra-variable: 10px /*como a esta variable le cree dentro de un b, entonces solo la pueden usar los b nada mas. es local para b*/
+    
+}

@@ -1,0 +1,32 @@
+*{
+    font-family: cursive;
+    font-weight: 100;
+    font-size: 40px;
+    box-sizing: border-box;
+    
+}
+/*.caja1, .caja2{
+    background: red;
+}*/
+
+.caja1{
+    width:200px;
+    height:200px;
+    background: red;
+    margin:auto;
+    /*border: 5px solid black;*/
+    outline: 10px solid blue;
+    position: relative;
+    left: 0px;
+    display: inline-block;
+    z-index: 1000;
+}
+.caja2{
+    width:200px;
+    height:200px;
+    background: red;
+    position: relative;
+    margin:auto;
+    display: inline-block;
+    z-index: 100;
+}

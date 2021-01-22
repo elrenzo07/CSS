@@ -1,0 +1,31 @@
+/*
+mobile first
+
+*/
+*{font-family: sans-serif;
+font-weight: 100;
+
+}
+
+div {
+    width: 45%;
+    display: inline-block;
+    padding: 10px;
+    background: #ddd;
+}
+h1 {
+    font-size: 34px;
+}
+
+.caja2 {
+    display: inline-block;
+    background: #bbb;
+}
+
+@media only screen and (max-width: 600px){
+    div {
+        display: block;
+        width: 100%;
+    }
+
+}

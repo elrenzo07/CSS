@@ -1,0 +1,36 @@
+body {
+    background: radial-gradient(circle, #fff,#aaa);
+    margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    padding: 20px;
+    border: 5px solid #000;
+    width: 70%;
+    min-width: 400px;
+    height: 500px;
+    grid-template-columns: repeat(3,1fr); /*con auto-fill a medida que entre una nueva columna, entonces la pone. respeta el minimo*/
+                                                            /*con auto-fit las agrega respetando el maximo, con fr las estira*/
+    grid-template-rows: repeat(3,1fr); /*con esto le doy dimension a las filas*/
+                                    /*el comando reapeat repite lo que tiene como valor la cantidad de veces que le diga*/
+
+
+    /*e aqui la tercera parte*/
+    justify-content: end; /*tambien funciona space-arroun, between y evenly ademas de start, center y end*/
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.grid-item {
+    outline: 1px solid #000;
+    background-color: olivedrab;
+    padding: 50px;
+}
+
+.grid-item:first-child {
+    /*align-self: start;
+    justify-self: start;*/
+    place-self: start start; /*esto es lo mismo que lo anterior, primero align y despues constent*/
+}

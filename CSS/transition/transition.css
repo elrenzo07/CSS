@@ -1,0 +1,19 @@
+.container {
+    background: #999;
+    width: 300px;
+    padding:30px;
+}
+
+.caja {
+    background: #822;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    transition-property: background;
+    transition-duration: 0.3s;
+    transition-timing-function: linear; /*linear, ease(Default), ease-in, ease-out*/
+}
+
+.caja:hover {
+    background: red;
+}

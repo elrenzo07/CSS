@@ -1,0 +1,31 @@
+/* *{
+    padding: 0px;
+    margin: 0px;
+}
+div {
+    color:blue
+}
+.titulo-h1{
+    font-family: sans-serif;
+    line-height: .8;
+    background-color: black;
+    color:yellow;
+    font-size: 5em;
+    width: 70vw;
+    height: 50vh;
+}*/
+
+.titulo-h1{
+    background-color: grey;
+    display: inline-block; /*conserva las propiedades de un bloque como si fuese una linea*/
+    padding: 100px;
+    box-sizing: border-box; /*para que no se deforme heidth y width fijos*/
+    text-align: center;
+    border-radius: 10px; /*em px cm rem*/
+    box-shadow: 10px 20px 30px 10px;
+    text-shadow: 10px 10px 30px white,0px 0px 30px white;
+    margin: 20px 10px;
+    border-style: 10px solid red;
+    transform: rotate(-10deg);
+
+}

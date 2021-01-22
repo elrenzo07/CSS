@@ -1,0 +1,25 @@
+body {
+    background: radial-gradient(circle, #fff,#aaa);
+    margin: 20px;
+}
+
+.grid-container {
+    display: grid;
+    padding: 50px;
+    justify-content: center;
+    justify-items: normal;
+    border: 5px solid #000;
+    grid-template-columns: repeat(auto-fit,minmax(50px,150px)); /*con auto-fill a medida que entre una nueva columna, entonces la pone. respeta el minimo*/
+                                                            /*con auto-fit las agrega respetando el maximo, con fr las estira*/
+    grid-template-rows: repeat(4,150px); /*con esto le doy dimension a las filas*/
+                                    /*el comando reapeat repite lo que tiene como valor la cantidad de veces que le diga*/
+    /*grid-gap: 5px; es para separar cada celda del container grid*/
+    grid-auto-rows: 150px; /*crea de forma implicita las filas que no están definidas en template*/
+    grid-auto-columns: 150px; /*idem al anterior pero para columnas*/
+    grid-auto-flow: row; /*row es por defecto, entonces crea nuevos implicitos en filas*/
+}
+
+.grid-item {
+    outline: 1px solid #000;
+    background-color: olivedrab;
+}

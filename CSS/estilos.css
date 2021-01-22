@@ -1,0 +1,24 @@
+*{
+    color:red
+}
+h1{
+    color:#0015ff; font-style: italic;
+}
+button{
+    color:khaki; background-color: black;
+}
+button:hover{
+    color:khaki; background-color: blue;
+}
+.titulo-h2{
+    size: 1cm; color:blueviolet
+}
+#identificador{
+    color:magenta
+}
+[SelPorAtributo = "siiii"]{
+    color:yellow
+}
+#identificador:hover{
+    color:blue
+}

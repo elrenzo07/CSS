@@ -1,0 +1,49 @@
+/*
+flexbox
+
+*/
+*{font-family: sans-serif;
+font-weight: 100;
+font-size: 20px;
+
+}
+
+.flex-cont {
+    display: flex;
+    height: 100vh;
+    min-width: 700px;
+    flex-direction: row; /*colum y row(std) cambia la direccion de main axis y cross axis*/
+    flex-wrap: wrap;/*wrap mantiene el tamaño de las cajasy las baja a medida que se hace más chico - reverse las sube*/
+    /*justify-content: space-evenly; /*space evenly pone el mismo espacio tanto a los costados como entre cajas*/
+    /*align-items: flex-start; /*flex start se ajusta al contenido y no se estira por todo el cross axis
+                                strech es la propiedad por defecto
+                                importante es que solo trabaja para la primera linea. para todas las lineas usar align-content*/
+    align-content: flex-start; /*para alinear en cross axis*/
+
+    /*si quiero bajar todas las cajas al suelo y a medida que achico la ventana que vallan subiendo uso
+    flex-wrap:wrap-reverse;
+    align-content: baseline
+    
+    baseline funciona solo con wrap-reverse.
+    */
+
+                            }
+.flex-item {
+    background-color: #25d;
+    color: #fff;
+    text-align: center;
+    margin: 10px;
+    min-width: 120px;
+    height: 120px;
+    width: 300px;
+    flex-grow: 1; /*para que la caja flex se ajuste al ancho de la ventana
+                    si se la doy a un solo item, entonces cambia el tamaño de ese item nada mas*/
+    
+}
+.naranja {
+    background: brown;
+}
+.verde {
+    background: green;
+   
+}

@@ -1,0 +1,33 @@
+.container {
+    background: #999;
+    padding:30px 5px;
+}
+
+.caja {
+    background: #822;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    position: relative; /*para iniciar la posición de la animación*/
+    animation-name: desplazarse;
+    animation-duration: 1s; 
+    animation-iteration-count: infinite; /*cantidad de veces que se deba hacer la animación*/
+    animation-direction: alternate; /*alternate. va y vuelve/ normal/reverse/alternate-reverse inicia desde el final y alterna*/
+    animation-timing-function: ease-in-out; /* forma en la que tienen que variar los efectos*/
+    animation-fill-mode: forwards; /*nomral, backwards se queda como al principio. forwards  se queda como la ultima instancia de la animación*/
+                                    /*both arraca con la config de la animación y finaliza como forwards*/
+}
+
+@keyframes desplazarse {
+    0% {
+        left: 0;
+        background: #822;
+    }
+    50% {
+        background: red;
+    }
+    100% {
+        background: darkviolet;
+        left: 80%;
+    }
+}

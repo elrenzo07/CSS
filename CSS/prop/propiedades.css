@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.titulo-h1{
+    background-color: black;
+    color:yellow;
+    font-size: 5em;
+    width: 50vw;
+    height: 50vh;
+}
+.titulo-h1__h2{
+    color:red
+}
